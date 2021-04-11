@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class Operacao implements Serializable {
+public class Operation implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer amount;
@@ -16,10 +16,10 @@ public class Operacao implements Serializable {
 	private Double rate;
 	private Character symbol;
 
-	public Operacao() {
+	public Operation() {
 	}
 
-	public Operacao(Integer amount, String from, String to, Double rate) {
+	public Operation(Integer amount, String from, String to, Double rate) {
 		super();
 		this.amount = amount;
 		this.from = from;

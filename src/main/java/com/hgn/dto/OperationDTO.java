@@ -2,18 +2,18 @@ package com.hgn.dto;
 
 import java.io.Serializable;
 
-import com.hgn.entities.Operacao;
+import com.hgn.entities.Operation;
 
-public class OperacaoDTO implements Serializable {
+public class OperationDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Double convertedAmount;
 	private Character symbol;
 
-	public OperacaoDTO() {
+	public OperationDTO() {
 	}
 
-	public OperacaoDTO(Operacao operacao) {
+	public OperationDTO(Operation operacao) {
 		convertedAmount = operacao.getConvertedAmount();
 		symbol = operacao.getSymbol();
 	}
